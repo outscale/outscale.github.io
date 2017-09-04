@@ -101,7 +101,7 @@ $(function() {
 <p>You will need to build DPDK before building packetgraph.</p>
 <h2>Install needed tools</h2>
 <p>You may adapt this depending of your linux distribution: </p><div class="fragment"><div class="line">$ sudo apt-get install automake libtool libpcap-dev libglib2.0-dev libjemalloc-dev</div></div><!-- fragment --><h2>Build DPDK</h2>
-<div class="fragment"><div class="line">$ git clone http://dpdk.org/git/dpdk</div><div class="line">$ cd dpdk</div><div class="line">$ git checkout -b v17.05 v17.05</div><div class="line">$ make config T=x86_64-native-linuxapp-gcc</div></div><!-- fragment --><p>Note: use <code>T=x86_64-native-linuxapp-clang</code> to build with clang</p>
+<div class="fragment"><div class="line">$ git clone http://dpdk.org/git/dpdk</div><div class="line">$ cd dpdk</div><div class="line">$ git checkout -b v17.08 v17.08</div><div class="line">$ make config T=x86_64-native-linuxapp-gcc</div></div><!-- fragment --><p>Note: use <code>T=x86_64-native-linuxapp-clang</code> to build with clang</p>
 <p>Edit build/.config and be sure to set the following parameters to 'y':</p><ul>
 <li>CONFIG_RTE_LIBRTE_PMD_PCAP</li>
 </ul>
