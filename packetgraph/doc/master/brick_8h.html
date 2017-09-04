@@ -93,8 +93,8 @@ Functions</h2></td></tr>
 <tr class="separator:a93e2d7e857af1f6e63ee328c51e56607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8da2760146a914fbff3cb8af0258125e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brick_8h.html#a8da2760146a914fbff3cb8af0258125e">pg_brick_poll</a> (struct pg_brick *brick, uint16_t *count, struct <a class="el" href="structpg__error.html">pg_error</a> **errp)</td></tr>
 <tr class="separator:a8da2760146a914fbff3cb8af0258125e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a878d4be83fefb280ab349002b8c0887a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brick_8h.html#a878d4be83fefb280ab349002b8c0887a">pg_brick_pollable</a> (struct pg_brick *brick)</td></tr>
-<tr class="separator:a878d4be83fefb280ab349002b8c0887a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a87c9da81789d7749444c12547b62c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brick_8h.html#a1a87c9da81789d7749444c12547b62c3">pg_brick_pollable</a> (const struct pg_brick *brick)</td></tr>
+<tr class="separator:a1a87c9da81789d7749444c12547b62c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd157f21e4df5a4d6ce11dbf6f8c4e74"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brick_8h.html#abd157f21e4df5a4d6ce11dbf6f8c4e74">pg_brick_pkts_count_get</a> (struct pg_brick *brick, enum <a class="el" href="common_8h.html#a2c49a06091b862d9ae371724b4a27643">pg_side</a> side)</td></tr>
 <tr class="separator:abd157f21e4df5a4d6ce11dbf6f8c4e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fd4d8a1612bf97c8e8797c4a705d7c4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brick_8h.html#a8fd4d8a1612bf97c8e8797c4a705d7c4">pg_brick_rx_bytes</a> (struct pg_brick *brick)</td></tr>
@@ -103,10 +103,10 @@ Functions</h2></td></tr>
 <tr class="separator:ade9c1653802e4fd93d3681ed3dd2602d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a381cf09ffad00def8944a2840a977223"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brick_8h.html#a381cf09ffad00def8944a2840a977223">pg_brick_destroy</a> (struct pg_brick *brick)</td></tr>
 <tr class="separator:a381cf09ffad00def8944a2840a977223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a27c54d904c413d3639a1a5555067ac"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brick_8h.html#a6a27c54d904c413d3639a1a5555067ac">pg_brick_name</a> (struct pg_brick *brick)</td></tr>
-<tr class="separator:a6a27c54d904c413d3639a1a5555067ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada88ab494e6eb92210f0091211ead339"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brick_8h.html#ada88ab494e6eb92210f0091211ead339">pg_brick_type</a> (struct pg_brick *brick)</td></tr>
-<tr class="separator:ada88ab494e6eb92210f0091211ead339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d93787f66434becdc530c53310dd72"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brick_8h.html#af1d93787f66434becdc530c53310dd72">pg_brick_name</a> (const struct pg_brick *brick)</td></tr>
+<tr class="separator:af1d93787f66434becdc530c53310dd72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b605ff1fcb6ec221e87486d65c1a299"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brick_8h.html#a6b605ff1fcb6ec221e87486d65c1a299">pg_brick_type</a> (const struct pg_brick *brick)</td></tr>
+<tr class="separator:a6b605ff1fcb6ec221e87486d65c1a299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0440d1f0713e3074e6f73706b2cbf228"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brick_8h.html#a0440d1f0713e3074e6f73706b2cbf228">pg_brick_dot_fd</a> (struct pg_brick *brick, FILE *fd)</td></tr>
 <tr class="separator:a0440d1f0713e3074e6f73706b2cbf228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae400b4349ba711f52c297c19c0a299b3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="brick_8h.html#ae400b4349ba711f52c297c19c0a299b3">pg_brick_dot</a> (struct pg_brick *brick)</td></tr>
@@ -327,8 +327,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6a27c54d904c413d3639a1a5555067ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a27c54d904c413d3639a1a5555067ac">&#9670;&nbsp;</a></span>pg_brick_name()</h2>
+<a id="af1d93787f66434becdc530c53310dd72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d93787f66434becdc530c53310dd72">&#9670;&nbsp;</a></span>pg_brick_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,7 +336,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">const char* pg_brick_name </td>
           <td>(</td>
-          <td class="paramtype">struct pg_brick *&#160;</td>
+          <td class="paramtype">const struct pg_brick *&#160;</td>
           <td class="paramname"><em>brick</em></td><td>)</td>
           <td></td>
         </tr>
@@ -434,8 +434,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a878d4be83fefb280ab349002b8c0887a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a878d4be83fefb280ab349002b8c0887a">&#9670;&nbsp;</a></span>pg_brick_pollable()</h2>
+<a id="a1a87c9da81789d7749444c12547b62c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a87c9da81789d7749444c12547b62c3">&#9670;&nbsp;</a></span>pg_brick_pollable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -443,7 +443,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool pg_brick_pollable </td>
           <td>(</td>
-          <td class="paramtype">struct pg_brick *&#160;</td>
+          <td class="paramtype">const struct pg_brick *&#160;</td>
           <td class="paramname"><em>brick</em></td><td>)</td>
           <td></td>
         </tr>
@@ -512,8 +512,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ada88ab494e6eb92210f0091211ead339"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada88ab494e6eb92210f0091211ead339">&#9670;&nbsp;</a></span>pg_brick_type()</h2>
+<a id="a6b605ff1fcb6ec221e87486d65c1a299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b605ff1fcb6ec221e87486d65c1a299">&#9670;&nbsp;</a></span>pg_brick_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -521,7 +521,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">const char* pg_brick_type </td>
           <td>(</td>
-          <td class="paramtype">struct pg_brick *&#160;</td>
+          <td class="paramtype">const struct pg_brick *&#160;</td>
           <td class="paramname"><em>brick</em></td><td>)</td>
           <td></td>
         </tr>
