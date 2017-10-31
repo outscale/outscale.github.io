@@ -89,10 +89,14 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a99dcc0daff1fc05c5e9490ec3232a7e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vtep_8h.html#a99dcc0daff1fc05c5e9490ec3232a7e6">pg_vtep_flags</a> { <a class="el" href="vtep_8h.html#a99dcc0daff1fc05c5e9490ec3232a7e6ae594359a04aa62846324ff8eca5c9227">PG_VTEP_NONE</a> = 0, 
+<tr class="memitem:a99dcc0daff1fc05c5e9490ec3232a7e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vtep_8h.html#a99dcc0daff1fc05c5e9490ec3232a7e6">pg_vtep_flags</a> { <br />
+&#160;&#160;<a class="el" href="vtep_8h.html#a99dcc0daff1fc05c5e9490ec3232a7e6ae594359a04aa62846324ff8eca5c9227">PG_VTEP_NONE</a> = 0, 
 <a class="el" href="vtep_8h.html#a99dcc0daff1fc05c5e9490ec3232a7e6a23cc76423ef13d259218986083b3bed5">PG_VTEP_NO_COPY</a> = 1, 
 <a class="el" href="vtep_8h.html#a99dcc0daff1fc05c5e9490ec3232a7e6ac9b43ea41ec54f82ea2d9623d9a02388">PG_VTEP_NO_INNERMAC_CHECK</a> = 2, 
-<a class="el" href="vtep_8h.html#a99dcc0daff1fc05c5e9490ec3232a7e6ab22891e2f278270c031e014a2287f728">PG_VTEP_ALL_OPTI</a> = PG_VTEP_NO_COPY | PG_VTEP_NO_INNERMAC_CHECK
+<a class="el" href="vtep_8h.html#a99dcc0daff1fc05c5e9490ec3232a7e6a7bec591342bd959712910c1eaa6267b9">PG_VTEP_FORCE_UPD_IPV6_CHECKSUM</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="vtep_8h.html#a99dcc0daff1fc05c5e9490ec3232a7e6ab22891e2f278270c031e014a2287f728">PG_VTEP_ALL_OPTI</a> = PG_VTEP_NO_COPY | PG_VTEP_NO_INNERMAC_CHECK
+<br />
  }</td></tr>
 <tr class="separator:a99dcc0daff1fc05c5e9490ec3232a7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -172,7 +176,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="vtep_8h_source.html#l00090">90</a> of file <a class="el" href="vtep_8h_source.html">vtep.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtep_8h_source.html#l00091">91</a> of file <a class="el" href="vtep_8h_source.html">vtep.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +296,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to a brick structure on success, NULL on error </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vtep_8h_source.html#l00198">198</a> of file <a class="el" href="vtep_8h_source.html">vtep.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtep_8h_source.html#l00199">199</a> of file <a class="el" href="vtep_8h_source.html">vtep.h</a>.</p>
 
 </div>
 </div>
@@ -312,6 +316,7 @@ Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a99dcc0daff1fc05c5e9490ec3232a7e6ae594359a04aa62846324ff8eca5c9227"></a>PG_VTEP_NONE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a99dcc0daff1fc05c5e9490ec3232a7e6a23cc76423ef13d259218986083b3bed5"></a>PG_VTEP_NO_COPY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a99dcc0daff1fc05c5e9490ec3232a7e6ac9b43ea41ec54f82ea2d9623d9a02388"></a>PG_VTEP_NO_INNERMAC_CHECK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a99dcc0daff1fc05c5e9490ec3232a7e6a7bec591342bd959712910c1eaa6267b9"></a>PG_VTEP_FORCE_UPD_IPV6_CHECKSUM&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a99dcc0daff1fc05c5e9490ec3232a7e6ab22891e2f278270c031e014a2287f728"></a>PG_VTEP_ALL_OPTI&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
