@@ -57,7 +57,7 @@ var searchData=
   ['pg_5fnic_5fget_5fmac',['pg_nic_get_mac',['../nic_8h.html#ae7b22b3f984caaed6295fecf9aee1d8a',1,'nic.h']]],
   ['pg_5fnic_5fget_5fmtu',['pg_nic_get_mtu',['../nic_8h.html#a03f145fd0007ab53b051fedf2a267f1e',1,'nic.h']]],
   ['pg_5fnic_5fnew',['pg_nic_new',['../nic_8h.html#aa09bceb370f79d71f4b75368953bdc3d',1,'nic.h']]],
-  ['pg_5fnic_5fnew_5fby_5fid',['pg_nic_new_by_id',['../nic_8h.html#a5565e4fa5afba2a1e02c0fa72f3cbbea',1,'nic.h']]],
+  ['pg_5fnic_5fnew_5fby_5fid',['pg_nic_new_by_id',['../nic_8h.html#a4125a0b767597af306f2a0f143eeee54',1,'nic.h']]],
   ['pg_5fnic_5fport_5fcount',['pg_nic_port_count',['../nic_8h.html#a4d7a1a6b39e6290983ac0f4dd09db6ae',1,'nic.h']]],
   ['pg_5fnic_5fset_5fmtu',['pg_nic_set_mtu',['../nic_8h.html#a906eb69afe8f83974b7845bdaf497636',1,'nic.h']]],
   ['pg_5fnop_5fnew',['pg_nop_new',['../nop_8h.html#ac109632762198a9044a311a49ed02a41',1,'nop.h']]],

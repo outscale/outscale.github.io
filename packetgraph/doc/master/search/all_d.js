@@ -75,7 +75,7 @@ var searchData=
   ['pg_5fnic_5fget_5fmac',['pg_nic_get_mac',['../nic_8h.html#ae7b22b3f984caaed6295fecf9aee1d8a',1,'nic.h']]],
   ['pg_5fnic_5fget_5fmtu',['pg_nic_get_mtu',['../nic_8h.html#a03f145fd0007ab53b051fedf2a267f1e',1,'nic.h']]],
   ['pg_5fnic_5fnew',['pg_nic_new',['../nic_8h.html#aa09bceb370f79d71f4b75368953bdc3d',1,'nic.h']]],
-  ['pg_5fnic_5fnew_5fby_5fid',['pg_nic_new_by_id',['../nic_8h.html#a5565e4fa5afba2a1e02c0fa72f3cbbea',1,'nic.h']]],
+  ['pg_5fnic_5fnew_5fby_5fid',['pg_nic_new_by_id',['../nic_8h.html#a4125a0b767597af306f2a0f143eeee54',1,'nic.h']]],
   ['pg_5fnic_5fport_5fcount',['pg_nic_port_count',['../nic_8h.html#a4d7a1a6b39e6290983ac0f4dd09db6ae',1,'nic.h']]],
   ['pg_5fnic_5frx_5foffload_5fipv4_5fcksum',['PG_NIC_RX_OFFLOAD_IPV4_CKSUM',['../nic_8h.html#a3fa3a31b29ace4a1a57fd33153960de7',1,'nic.h']]],
   ['pg_5fnic_5frx_5foffload_5fouter_5fipv4_5fcksum',['PG_NIC_RX_OFFLOAD_OUTER_IPV4_CKSUM',['../nic_8h.html#a91317eb903517d04b079f6cd99320769',1,'nic.h']]],
