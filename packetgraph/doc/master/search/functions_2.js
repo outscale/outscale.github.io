@@ -52,6 +52,7 @@ var searchData=
   ['pg_5fgraph_5fsplit',['pg_graph_split',['../graph_8h.html#a39ef043531058a0a3d0dfcb901fbe2a5',1,'graph.h']]],
   ['pg_5fgraph_5funsafe_5fpop',['pg_graph_unsafe_pop',['../graph_8h.html#aebda591c439c200597f240e8304e9ba3',1,'graph.h']]],
   ['pg_5fhub_5fnew',['pg_hub_new',['../hub_8h.html#a534b1dcc1761bb063032c6a49584fd5b',1,'hub.h']]],
+  ['pg_5fhub_5fset_5fno_5fbackward',['pg_hub_set_no_backward',['../hub_8h.html#add6ccbcfcf382c3afea1a1c814df8f31',1,'hub.h']]],
   ['pg_5fip_5ffragment_5fnew',['pg_ip_fragment_new',['../ip-fragment_8h.html#a9817a6176df69e31134a02548c1b39ed',1,'ip-fragment.h']]],
   ['pg_5fnic_5fcapabilities',['pg_nic_capabilities',['../nic_8h.html#a7704465a675a94013a49411f27865d7a',1,'nic.h']]],
   ['pg_5fnic_5fget_5fmac',['pg_nic_get_mac',['../nic_8h.html#ae7b22b3f984caaed6295fecf9aee1d8a',1,'nic.h']]],

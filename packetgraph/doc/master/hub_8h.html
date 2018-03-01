@@ -77,6 +77,8 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a534b1dcc1761bb063032c6a49584fd5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#a033dc0697a2cac5488f82c0cc0fa2038">PG_WARN_UNUSED</a> struct pg_brick *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hub_8h.html#a534b1dcc1761bb063032c6a49584fd5b">pg_hub_new</a> (const char *name, uint32_t west_max, uint32_t east_max, struct <a class="el" href="structpg__error.html">pg_error</a> **errp)</td></tr>
 <tr class="separator:a534b1dcc1761bb063032c6a49584fd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6ccbcfcf382c3afea1a1c814df8f31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hub_8h.html#add6ccbcfcf382c3afea1a1c814df8f31">pg_hub_set_no_backward</a> (struct pg_brick *brick, int val)</td></tr>
+<tr class="separator:add6ccbcfcf382c3afea1a1c814df8f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a534b1dcc1761bb063032c6a49584fd5b"></a>
@@ -127,6 +129,43 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to a brick structure on success, NULL on error </dd></dl>
+
+</div>
+</div>
+<a id="add6ccbcfcf382c3afea1a1c814df8f31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6ccbcfcf382c3afea1a1c814df8f31">&#9670;&nbsp;</a></span>pg_hub_set_no_backward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pg_hub_set_no_backward </td>
+          <td>(</td>
+          <td class="paramtype">struct pg_brick *&#160;</td>
+          <td class="paramname"><em>brick</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set no backward capability to hub brick</p>
+<p>When no backward is set, the hub brick can only forward packets in the direction oposite to where they came from</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brick</td><td>the brick </td></tr>
+    <tr><td class="paramname">val</td><td>0 or 1 (for true or false) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
