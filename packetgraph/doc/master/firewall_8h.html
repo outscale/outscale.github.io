@@ -93,6 +93,8 @@ Functions</h2></td></tr>
 <tr class="separator:a8679572913eb2ef5ca8e804a639af228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7eed57da5605b2301bbc19563834cca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="firewall_8h.html#ad7eed57da5605b2301bbc19563834cca">pg_firewall_rule_flush</a> (struct pg_brick *brick)</td></tr>
 <tr class="separator:ad7eed57da5605b2301bbc19563834cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40f61c16615dcf163a3ecd12fc95489"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="firewall_8h.html#ac40f61c16615dcf163a3ecd12fc95489">pg_firewall_rule_flush_side</a> (struct pg_brick *brick, enum <a class="el" href="common_8h.html#a2c49a06091b862d9ae371724b4a27643">pg_side</a> side)</td></tr>
+<tr class="separator:ac40f61c16615dcf163a3ecd12fc95489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af73d97357253c9a1b33971f0b312fd1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="firewall_8h.html#af73d97357253c9a1b33971f0b312fd1d">pg_firewall_reload</a> (struct pg_brick *brick, struct <a class="el" href="structpg__error.html">pg_error</a> **errp)</td></tr>
 <tr class="separator:af73d97357253c9a1b33971f0b312fd1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -318,6 +320,42 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">brick</td><td>pointer to the firewall brick </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac40f61c16615dcf163a3ecd12fc95489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac40f61c16615dcf163a3ecd12fc95489">&#9670;&nbsp;</a></span>pg_firewall_rule_flush_side()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pg_firewall_rule_flush_side </td>
+          <td>(</td>
+          <td class="paramtype">struct pg_brick *&#160;</td>
+          <td class="paramname"><em>brick</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="common_8h.html#a2c49a06091b862d9ae371724b4a27643">pg_side</a>&#160;</td>
+          <td class="paramname"><em>side</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flush all rules that filter a side of the firewall. Note that the flush won't be effective until you call firewall_reload() before.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brick</td><td>pointer to the firewall brick </td></tr>
+    <tr><td class="paramname">side</td><td>the side on which rules will be remove </td></tr>
   </table>
   </dd>
 </dl>

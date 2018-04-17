@@ -48,6 +48,7 @@ var searchData=
   ['pg_5ffirewall_5freload',['pg_firewall_reload',['../firewall_8h.html#af73d97357253c9a1b33971f0b312fd1d',1,'firewall.h']]],
   ['pg_5ffirewall_5frule_5fadd',['pg_firewall_rule_add',['../firewall_8h.html#ab9bb9ca62054dfc4383981a2d38b88b1',1,'firewall.h']]],
   ['pg_5ffirewall_5frule_5fflush',['pg_firewall_rule_flush',['../firewall_8h.html#ad7eed57da5605b2301bbc19563834cca',1,'firewall.h']]],
+  ['pg_5ffirewall_5frule_5fflush_5fside',['pg_firewall_rule_flush_side',['../firewall_8h.html#ac40f61c16615dcf163a3ecd12fc95489',1,'firewall.h']]],
   ['pg_5fflip_5fside',['pg_flip_side',['../common_8h.html#a720add8484098f54e66f31a0a0c3adb2',1,'common.h']]],
   ['pg_5ffragmented_5fmbuf',['PG_FRAGMENTED_MBUF',['../common_8h.html#a06e02a892eb6a5c1b06d4378a7fea11ea325fdddd8abfcd5cbb51c480bd34ecda',1,'common.h']]],
   ['pg_5fgraph_5fbrick_5fdestroy',['pg_graph_brick_destroy',['../graph_8h.html#a88677ad6bbc7dc47da351ae42ceb69f2',1,'graph.h']]],
