@@ -152,7 +152,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Manually call the firewall garbage collector. NPF firewall tracks all connexions when stateful. To clean old connexions, we must manually call the connexion garbage collection when PG_NO_CONN_WORKER flag shas not been set at brick creation.</p>
+<p>Manually call the firewall garbage collector. NPF firewall tracks all connexions when stateful. if PG_NO_CONN_WORKER flag has not been set, we must manually call the garbage collector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">brick</td><td>pointer to the firewall brick </td></tr>
@@ -316,7 +316,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Flush all rules of the firewall. Note that the flush won't be effective, you will need to call firewall_reload() before.</p>
+<p>Flush all rules of the firewall. Note that the flush won't be effective until you call firewall_reload().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">brick</td><td>pointer to the firewall brick </td></tr>
@@ -351,7 +351,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Flush all rules that filter a side of the firewall. Note that the flush won't be effective until you call firewall_reload() before.</p>
+<p>Flush all rules that filter a side of the firewall. Note that the flush won't be effective until you call firewall_reload().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">brick</td><td>pointer to the firewall brick </td></tr>
