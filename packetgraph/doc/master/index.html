@@ -100,7 +100,7 @@ $(function() {
 <p>To build and run examples, you may first check how to build Packetgraph below and adjust your configure command before make: </p><div class="fragment"><div class="line">$ ./configure --with-examples</div><div class="line">$ make</div></div><!-- fragment --><p>To run a specific example, check run scripts in tests directories: </p><div class="fragment"><div class="line">$ ./examples/switch/run_vhost.sh</div><div class="line">$ ./examples/switch/run.sh</div><div class="line">$ ./examples/firewall/run.sh</div><div class="line">$ ./examples/rxtx/run.sh</div><div class="line">$ ./examples/dperf/run.sh</div><div class="line">...</div></div><!-- fragment --><h1>Building</h1>
 <p>You will need to build DPDK before building Packetgraph.</p>
 <h2>Install needed tools</h2>
-<p>You may adapt this depending on your Linux distribution: </p><div class="fragment"><div class="line">$ sudo apt-get install automake libtool libpcap-dev libglib2.0-dev libjemalloc-dev</div></div><!-- fragment --><h2>Build DPDK</h2>
+<p>You may adapt this depending on your Linux distribution: </p><div class="fragment"><div class="line">$ sudo apt-get install automake libtool libpcap-dev libglib2.0-dev libjemalloc-dev libnuma-dev</div></div><!-- fragment --><h2>Build DPDK</h2>
 <div class="fragment"><div class="line">$ git clone http://dpdk.org/git/dpdk</div><div class="line">$ cd dpdk</div><div class="line">$ git checkout -b v18.02 v18.02</div><div class="line">$ make config T=x86_64-native-linuxapp-gcc</div></div><!-- fragment --><p>Note: use <code>T=x86_64-native-linuxapp-clang</code> to build with clang</p>
 <p>Edit build/.config and be sure to set the following parameters to 'y':</p><ul>
 <li>CONFIG_RTE_LIBRTE_PMD_PCAP</li>
