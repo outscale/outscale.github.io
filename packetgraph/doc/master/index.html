@@ -113,8 +113,6 @@ $(function() {
 <p>Once your .config file is read, you can now build dpdk as follows:</p>
 <div class="fragment"><div class="line">$ make EXTRA_CFLAGS=&#39;-fPIC&#39;</div></div><!-- fragment --><p>Finally, set <code>RTE_SDK</code> environment variable: </p><div class="fragment"><div class="line">$ export RTE_SDK=$(pwd)</div></div><!-- fragment --><p>## Build packetgraph </p><div class="fragment"><div class="line">$ git clone https://github.com/outscale/packetgraph.git</div><div class="line">$ cd packetgraph</div><div class="line">$ git submodule update --init</div><div class="line">$ ./autogen.sh</div><div class="line">$ ./configure</div><div class="line">$ make</div><div class="line">$ make install</div></div><!-- fragment --><p>Note: to build with clang, you can use <code>./configure_clang</code> wrapper instead of <code>./configure</code>.</p>
 <p>Note 2: You need a compiler that support C11 (gcc 4.9 or superior, or clang 3.6 or superior).</p>
-<h1>Compille Time Optimisation:</h1>
-<p>-DPG_BRICK_NO_ATOMIC_COUNT: do not use atomic variable to count packets, if you do so, you must call <code>pg_brick_pkts_count_get</code> in the same thread you use to poll packets</p>
 <h1>Licence</h1>
 <p>Packetgraph project is published under <a href="http://www.gnu.org/licenses/quick-guide-gplv3.en.html">GNU GPLv3</a>. For more information, check LICENSE file.</p>
 <h1>Contribute</h1>
