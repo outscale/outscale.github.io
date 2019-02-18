@@ -101,8 +101,9 @@ $(function() {
 <p>To build and run examples, you may first check how to build Packetgraph below and adjust your configure command before make: </p><div class="fragment"><div class="line">$ ./configure --with-examples</div><div class="line">$ make</div></div><!-- fragment --><p>To run a specific example, check run scripts in tests directories: </p><div class="fragment"><div class="line">$ ./examples/switch/run_vhost.sh</div><div class="line">$ ./examples/switch/run.sh</div><div class="line">$ ./examples/firewall/run.sh</div><div class="line">$ ./examples/rxtx/run.sh</div><div class="line">$ ./examples/dperf/run.sh</div><div class="line">...</div></div><!-- fragment --><h1>Building</h1>
 <p>You will need to build DPDK before building Packetgraph.</p>
 <h2>Install needed tools</h2>
-<p>You may adapt this depending on your Linux distribution: </p><div class="fragment"><div class="line">$ sudo apt-get install automake libtool libpcap-dev libglib2.0-dev libjemalloc-dev libnuma-dev</div></div><!-- fragment --><h2>Build DPDK</h2>
-<div class="fragment"><div class="line">$ git clone http://dpdk.org/git/dpdk</div><div class="line">$ cd dpdk</div><div class="line">$ git checkout -b v18.08 v18.08</div><div class="line">$ make config T=x86_64-native-linuxapp-gcc</div></div><!-- fragment --><p>Note: use <code>T=x86_64-native-linuxapp-clang</code> to build with clang</p>
+<p>You may adapt this depending on your Linux distribution:</p>
+<p>Ubuntu </p><div class="fragment"><div class="line">$ sudo apt-get install automake libtool libpcap-dev libglib2.0-dev libjemalloc-dev libnuma-dev openssl</div></div><!-- fragment --><p> CentOS </p><div class="fragment"><div class="line">$ sudo yum install -y automake glibc-devel glib2-devel libtool libpcap-devel git wget numactl numactl-devel openssl-devel clang</div><div class="line">$ wget http://cbs.centos.org/kojifiles/packages/jemalloc/3.6.0/8.el7.centos/x86_64/jemalloc-devel-3.6.0-8.el7.centos.x86_64.rpm</div><div class="line">$ wget http://cbs.centos.org/kojifiles/packages/jemalloc/3.6.0/8.el7.centos/x86_64/jemalloc-3.6.0-8.el7.centos.x86_64.rpm</div><div class="line">$ sudo rpm -i jemalloc-devel-3.6.0-8.el7.centos.x86_64.rpm jemalloc-3.6.0-8.el7.centos.x86_64.rpm</div></div><!-- fragment --><h2>Build DPDK</h2>
+<div class="fragment"><div class="line">$ git clone http://dpdk.org/git/dpdk</div><div class="line">$ cd dpdk</div><div class="line">$ git checkout -b v19.02 v19.02</div><div class="line">$ make config T=x86_64-native-linuxapp-gcc</div></div><!-- fragment --><p>Note: use <code>T=x86_64-native-linuxapp-clang</code> to build with clang</p>
 <p>Edit build/.config and be sure to set the following parameters to 'y':</p><ul>
 <li>CONFIG_RTE_LIBRTE_PMD_PCAP</li>
 </ul>
@@ -112,8 +113,17 @@ $(function() {
 </ul>
 <p>Once your .config file is ready, you can now build dpdk as follows:</p>
 <div class="fragment"><div class="line">$ make EXTRA_CFLAGS=&#39;-fPIC&#39;</div></div><!-- fragment --><p>Finally, set <code>RTE_SDK</code> environment variable: </p><div class="fragment"><div class="line">$ export RTE_SDK=$(pwd)</div></div><!-- fragment --><p>## Build packetgraph </p><div class="fragment"><div class="line">$ git clone https://github.com/outscale/packetgraph.git</div><div class="line">$ cd packetgraph</div><div class="line">$ git submodule update --init</div><div class="line">$ ./autogen.sh</div><div class="line">$ ./configure</div><div class="line">$ make</div><div class="line">$ make install</div></div><!-- fragment --><p>Note: to build with clang, you can use <code>./configure_clang</code> wrapper instead of <code>./configure</code>.</p>
-<p>Note 2: You need a compiler that support C11 (gcc 4.9 or superior, or clang 3.6 or superior).</p>
-<h1>Compille Time Optimisation:</h1>
+<p>Note 2: You need a compiler that support C11 (gcc 4.9 or superior, or clang 3.4 or superior).</p>
+<h2>Configure Huge Pages</h2>
+<p>Packetgraph uses some <a href="https://en.wikipedia.org/wiki/Page_%28computer_memory%29#Huge_pages">huge pages</a> (adjust to your needs):</p>
+<ul>
+<li>Edit your <code>/etc/sysctl.conf</code> and add some huge pages: <div class="fragment"><div class="line">vm.nr_hugepages=2000</div></div><!-- fragment --></li>
+<li>Reload your sysctl configuration: <div class="fragment"><div class="line">$ sudo sysctl -p /etc/sysctl.conf</div></div><!-- fragment --></li>
+<li>Check that your huge pages are available: <div class="fragment"><div class="line">$ cat /proc/meminfo | grep Huge</div></div><!-- fragment --></li>
+<li>Mount your huge pages: <div class="fragment"><div class="line">$ sudo mkdir -p /mnt/huge</div><div class="line">$ sudo mount -t hugetlbfs nodev /mnt/huge</div></div><!-- fragment --></li>
+<li>(optional) Add this mount in your <code>/etc/fstab</code>: <div class="fragment"><div class="line">hugetlbfs       /mnt/huge  hugetlbfs       rw,mode=0777        0 0</div></div><!-- fragment --> <h1>Compille Time Optimisation:</h1>
+</li>
+</ul>
 <p>-DPG_BRICK_NO_ATOMIC_COUNT: do not use atomic variable to count packets, if you do so, you must call <code>pg_brick_pkts_count_get</code> in the same thread you use to poll packets</p>
 <h1>Licence</h1>
 <p>Packetgraph project is published under <a href="http://www.gnu.org/licenses/quick-guide-gplv3.en.html">GNU GPLv3</a>. For more information, check LICENSE file.</p>
