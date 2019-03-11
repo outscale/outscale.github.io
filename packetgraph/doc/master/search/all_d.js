@@ -169,6 +169,7 @@ var searchData=
   ['pg_5fvhost_5fglobal_5fdisable',['pg_vhost_global_disable',['../vhost_8h.html#a11f060e0942a3c3c381a6a480873c68d',1,'vhost.h']]],
   ['pg_5fvhost_5fglobal_5fenable',['pg_vhost_global_enable',['../vhost_8h.html#af90096aea972a0e3e5a99216f224eede',1,'vhost.h']]],
   ['pg_5fvhost_5fnew',['pg_vhost_new',['../vhost_8h.html#a76bb117edaf189c68785b65e469a57f6',1,'vhost.h']]],
+  ['pg_5fvhost_5frequest_5fremove',['pg_vhost_request_remove',['../vhost_8h.html#a2a7978e6be9567b60c3c403175c8f14a',1,'vhost.h']]],
   ['pg_5fvhost_5fsocket_5fpath',['pg_vhost_socket_path',['../vhost_8h.html#ac345ae5c8c71e303f329dbcdbc968260',1,'vhost.h']]],
   ['pg_5fvhost_5fstart',['pg_vhost_start',['../vhost_8h.html#a5e931073899563e46e356b597c2a2829',1,'vhost.h']]],
   ['pg_5fvhost_5fstop',['pg_vhost_stop',['../vhost_8h.html#a4340a3c4786e3d52142b826700b6b02d',1,'vhost.h']]],

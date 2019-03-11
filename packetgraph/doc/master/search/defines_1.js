@@ -32,6 +32,7 @@ var searchData=
   ['pg_5frxtx_5fmax_5ftx_5fburst_5flen',['PG_RXTX_MAX_TX_BURST_LEN',['../rxtx_8h.html#a524ebb90d6f47d0be882cc82bc02353f',1,'rxtx.h']]],
   ['pg_5fsub_5ferror_5ffmt',['PG_SUB_ERROR_FMT',['../errors_8h.html#aee2dc1c20d1b8f2aab3d617a362b176e',1,'errors.h']]],
   ['pg_5fthread_5fstates_5fto_5fstr',['pg_thread_states_to_str',['../thread_8h.html#a7b7a7c9ef6eee7525f953a311c3b1277',1,'thread.h']]],
+  ['pg_5fvhost_5frequest_5fremove',['pg_vhost_request_remove',['../vhost_8h.html#a2a7978e6be9567b60c3c403175c8f14a',1,'vhost.h']]],
   ['pg_5fvhost_5fuser_5fclient',['PG_VHOST_USER_CLIENT',['../vhost_8h.html#a6490cdd82716efb52e8ae0cb042eeb17',1,'vhost.h']]],
   ['pg_5fvhost_5fuser_5fdequeue_5fzero_5fcopy',['PG_VHOST_USER_DEQUEUE_ZERO_COPY',['../vhost_8h.html#ad3fa9d67a5b9b0009766a971ce6a352e',1,'vhost.h']]],
   ['pg_5fvhost_5fuser_5fno_5freconnect',['PG_VHOST_USER_NO_RECONNECT',['../vhost_8h.html#ab0630c61f23566848363ba2a8311b67d',1,'vhost.h']]],
