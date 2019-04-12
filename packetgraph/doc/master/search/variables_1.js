@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['err_5fno',['err_no',['../structpg__error.html#aa6176c4679d1f0c8be477127473aacaf',1,'pg_error']]]
+  ['context',['context',['../structpg__error.html#a600e6d2c8c6ef872cc5cb6fd25f9469d',1,'pg_error']]]
 ];

@@ -71,7 +71,9 @@ $(function() {
 <div class="title">common.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;sys/prctl.h&gt;</code><br />
+<code>#include &lt;linux/seccomp.h&gt;</code><br />
+</div>
 <p><a href="common_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -102,6 +104,8 @@ Functions</h2></td></tr>
 <tr class="separator:a84fcbedc56852b03d9277380ba3a0050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a720add8484098f54e66f31a0a0c3adb2"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="common_8h.html#a2c49a06091b862d9ae371724b4a27643">pg_side</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#a720add8484098f54e66f31a0a0c3adb2">pg_flip_side</a> (enum <a class="el" href="common_8h.html#a2c49a06091b862d9ae371724b4a27643">pg_side</a> side)</td></tr>
 <tr class="separator:a720add8484098f54e66f31a0a0c3adb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c739a4a463483c4459d18947548759"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8h.html#ab6c739a4a463483c4459d18947548759">pg_init_seccomp</a> (void)</td></tr>
+<tr class="separator:ab6c739a4a463483c4459d18947548759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a6f52dd785ecf8d467ec6763faa597e0c"></a>
@@ -116,7 +120,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00046">46</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00049">49</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
 
 </div>
 </div>
@@ -132,7 +136,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00040">40</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00043">43</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
 
 </div>
 </div>
@@ -148,7 +152,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00043">43</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00046">46</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
 
 </div>
 </div>
@@ -164,7 +168,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00057">57</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00060">60</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
 
 </div>
 </div>
@@ -184,7 +188,7 @@ Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a06e02a892eb6a5c1b06d4378a7fea11ea325fdddd8abfcd5cbb51c480bd34ecda"></a>PG_FRAGMENTED_MBUF&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00027">27</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00030">30</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
 
 </div>
 </div>
@@ -205,7 +209,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a2c49a06091b862d9ae371724b4a27643ab5617c718ec2304e37d00b6f32db76e0"></a>PG_MAX_SIDE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00021">21</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00024">24</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
 
 </div>
 </div>
@@ -235,7 +239,27 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Revert side: PG_WEST_SIDE become PG_EAST_SIDE and vice versa. </p>
 
-<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00051">51</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00054">54</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
+
+</div>
+</div>
+<a id="ab6c739a4a463483c4459d18947548759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c739a4a463483c4459d18947548759">&#9670;&nbsp;</a></span>pg_init_seccomp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pg_init_seccomp </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize syscall filter</p>
+<dl class="section return"><dt>Returns</dt><dd>0 if the filter has been correctly build, -1 on the contrary. </dd></dl>
 
 </div>
 </div>
@@ -263,7 +287,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00031">31</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common_8h_source.html#l00034">34</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
 
 </div>
 </div>
