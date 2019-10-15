@@ -104,12 +104,18 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a656314abbbf378d0313935008e285d04"><td class="memItemLeft" align="right" valign="top">struct ether_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vtep_8h.html#a656314abbbf378d0313935008e285d04">pg_vtep_get_mac</a> (const struct pg_brick *brick)</td></tr>
 <tr class="separator:a656314abbbf378d0313935008e285d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1960af5e87beb4c576b15e2b099a2a76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vtep_8h.html#a1960af5e87beb4c576b15e2b099a2a76">pg_vtep4_cleanup_mac</a> (struct pg_brick *brick, int port_id)</td></tr>
+<tr class="separator:a1960af5e87beb4c576b15e2b099a2a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab320c4e426f6ff9969ec43203b94b056"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vtep_8h.html#ab320c4e426f6ff9969ec43203b94b056">pg_vtep6_cleanup_mac</a> (struct pg_brick *brick, int port_id)</td></tr>
+<tr class="separator:ab320c4e426f6ff9969ec43203b94b056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7a645ea9aba0a471af90a84ed74616e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vtep_8h.html#af7a645ea9aba0a471af90a84ed74616e">pg_vtep4_add_vni</a> (struct pg_brick *brick, struct pg_brick *neighbor, uint32_t vni, uint32_t multicast_ip, struct <a class="el" href="structpg__error.html">pg_error</a> **errp)</td></tr>
 <tr class="separator:af7a645ea9aba0a471af90a84ed74616e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c961ed09dcde7cd3302b69c2a774a76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vtep_8h.html#a5c961ed09dcde7cd3302b69c2a774a76">pg_vtep6_add_vni</a> (struct pg_brick *brick, struct pg_brick *neighbor, uint32_t vni, uint8_t *multicast_ip, struct <a class="el" href="structpg__error.html">pg_error</a> **errp)</td></tr>
 <tr class="separator:a5c961ed09dcde7cd3302b69c2a774a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5a2476bc2c2338f7257c467668062fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vtep_8h.html#aa5a2476bc2c2338f7257c467668062fe">pg_vtep_add_mac</a> (struct pg_brick *brick, uint32_t vni, struct ether_addr *mac, struct <a class="el" href="structpg__error.html">pg_error</a> **errp)</td></tr>
 <tr class="separator:aa5a2476bc2c2338f7257c467668062fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e05ef686b824d298b4a484512b78a04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vtep_8h.html#a4e05ef686b824d298b4a484512b78a04">pg_vtep_unset_mac</a> (struct pg_brick *brick, uint32_t vni, struct ether_addr *mac, struct <a class="el" href="structpg__error.html">pg_error</a> **errp)</td></tr>
+<tr class="separator:a4e05ef686b824d298b4a484512b78a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4114cbd07f5f21bb72470a95ed2c9eff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#a033dc0697a2cac5488f82c0cc0fa2038">PG_WARN_UNUSED</a> struct pg_brick *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vtep_8h.html#a4114cbd07f5f21bb72470a95ed2c9eff">pg_vtep6_new</a> (const char *name, uint32_t max, enum <a class="el" href="common_8h.html#a2c49a06091b862d9ae371724b4a27643">pg_side</a> output, uint8_t *ip, struct ether_addr mac, uint16_t udp_dst_port, int flag, struct <a class="el" href="structpg__error.html">pg_error</a> **errp)</td></tr>
 <tr class="separator:a4114cbd07f5f21bb72470a95ed2c9eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a969c2cc56578e598dea3c45bb7afa405"><td class="memItemLeft" align="right" valign="top"><a class="el" href="common_8h.html#a033dc0697a2cac5488f82c0cc0fa2038">PG_WARN_UNUSED</a> struct pg_brick *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vtep_8h.html#a969c2cc56578e598dea3c45bb7afa405">pg_vtep4_new</a> (const char *name, uint32_t max, enum <a class="el" href="common_8h.html#a2c49a06091b862d9ae371724b4a27643">pg_side</a> output, uint32_t ip, struct ether_addr mac, uint16_t udp_dst_port, int flag, struct <a class="el" href="structpg__error.html">pg_error</a> **errp)</td></tr>
@@ -176,7 +182,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="vtep_8h_source.html#l00091">91</a> of file <a class="el" href="vtep_8h_source.html">vtep.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtep_8h_source.html#l00109">109</a> of file <a class="el" href="vtep_8h_source.html">vtep.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +302,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to a brick structure on success, NULL on error </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vtep_8h_source.html#l00199">199</a> of file <a class="el" href="vtep_8h_source.html">vtep.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtep_8h_source.html#l00228">228</a> of file <a class="el" href="vtep_8h_source.html">vtep.h</a>.</p>
 
 </div>
 </div>
@@ -380,6 +386,41 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on error </dd></dl>
+
+</div>
+</div>
+<a id="a1960af5e87beb4c576b15e2b099a2a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1960af5e87beb4c576b15e2b099a2a76">&#9670;&nbsp;</a></span>pg_vtep4_cleanup_mac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pg_vtep4_cleanup_mac </td>
+          <td>(</td>
+          <td class="paramtype">struct pg_brick *&#160;</td>
+          <td class="paramname"><em>brick</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cleanup mac that have timeout This operation iterate over every mac It's slow, even with an empty mac table </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brick</td><td>a pointer to a vtep brick </td></tr>
+    <tr><td class="paramname">port_id</td><td>the port id (so the index of the connected brick) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -517,6 +558,41 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on error </dd></dl>
+
+</div>
+</div>
+<a id="ab320c4e426f6ff9969ec43203b94b056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab320c4e426f6ff9969ec43203b94b056">&#9670;&nbsp;</a></span>pg_vtep6_cleanup_mac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pg_vtep6_cleanup_mac </td>
+          <td>(</td>
+          <td class="paramtype">struct pg_brick *&#160;</td>
+          <td class="paramname"><em>brick</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cleanup mac that have timeout This operation iterate over every mac It's slow, even with an empty mac table </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brick</td><td>a pointer to a vtep brick </td></tr>
+    <tr><td class="paramname">port_id</td><td>the port id (so the index of the connected brick) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -737,6 +813,56 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Same as pg_vtep_new but use a string as ip </p>
+
+</div>
+</div>
+<a id="a4e05ef686b824d298b4a484512b78a04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e05ef686b824d298b4a484512b78a04">&#9670;&nbsp;</a></span>pg_vtep_unset_mac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pg_vtep_unset_mac </td>
+          <td>(</td>
+          <td class="paramtype">struct pg_brick *&#160;</td>
+          <td class="paramname"><em>brick</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>vni</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ether_addr *&#160;</td>
+          <td class="paramname"><em>mac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structpg__error.html">pg_error</a> **&#160;</td>
+          <td class="paramname"><em>errp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Like what the function name say </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brick</td><td>the brick we are working on </td></tr>
+    <tr><td class="paramname">vni</td><td>the vni on which you want to add mac </td></tr>
+    <tr><td class="paramname">mac</td><td>the mac </td></tr>
+    <tr><td class="paramname">errp</td><td>an error pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, -1 on error </dd></dl>
 
 </div>
 </div>
